@@ -387,10 +387,21 @@
   <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i></div>
   <div class="wrap cta-in revela">
     <h2>Teste 7 dias grátis</h2>
-    <p>Fale com a gente e receba o instalador e o passo a passo para conectar a sua loja.</p>
-    <div class="cta-acoes">
-      <a class="btn btn-lg btn-branco" href="mailto:contato@cuidaailojas.com.br?subject=Quero%20testar%207%20dias%20gr%C3%A1tis" data-whats="Olá! Quero testar o Cuida Aí Lojas por 7 dias grátis."><span>Quero testar 7 dias grátis</span></a>
-    </div>
+    <p>Deixe seu contato e receba o instalador e o passo a passo para conectar a sua loja.</p>
+    <form class="form-contato" id="form-contato" action="mailto:contato@cuidaailojas.com.br" method="post" enctype="text/plain" novalidate>
+      <div class="fc-grade">
+        <label>Seu nome<input name="nome" type="text" autocomplete="name" maxlength="80" required></label>
+        <label>WhatsApp com DDD ou e-mail<input name="contato" type="text" autocomplete="email" inputmode="email" maxlength="80" required></label>
+        <label>Sua loja<select name="plataforma"><option value="">Escolha</option><option>Shopee</option><option>TikTok Shop</option><option>As duas</option><option>Outra</option></select></label>
+        <label>Plano de interesse<select name="plano"><option value="">Escolha</option><option>Básico</option><option>Pro</option><option>Premium</option><option>Ainda não sei</option></select></label>
+      </div>
+      <label>Mensagem (opcional)<textarea name="mensagem" rows="3" maxlength="600"></textarea></label>
+      <div class="fc-isca" aria-hidden="true"><label>Não preencha<input name="site" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <label class="fc-aceite"><input type="checkbox" name="aceite" required> <span>Autorizo o Cuida Aí Lojas a responder este contato. <a href="privacidade.html">Privacidade</a></span></label>
+      <div class="cf-turnstile" id="ts-box" data-sitekey=""></div>
+      <button class="btn btn-lg btn-branco" type="submit"><span>Quero testar 7 dias grátis</span></button>
+      <p class="fc-msg" id="fc-msg" role="status" aria-live="polite"></p>
+    </form>
     <p class="cta-nota">Ou escreva para <a href="mailto:contato@cuidaailojas.com.br">contato@cuidaailojas.com.br</a></p>
   </div>
 </section>
