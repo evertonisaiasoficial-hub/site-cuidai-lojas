@@ -1,4 +1,9 @@
 /* Cuida Aí Lojas — página inicial. Cores e fonte do app (brand.json): #0E5A6B, #22A06B, #F28C28, fundo #F4F8F8, Inter */
+/* Inter no próprio site (mesmos arquivos do app, licença em fonts/INTER-LICENSE.txt): sem Google Fonts, carrega mais rápido */
+@font-face{font-family:Inter;src:url(fonts/inter-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-700-normal.woff2) format("woff2");font-weight:700 900;font-display:swap}
 :root{
   --pri:#0E5A6B; --pri-esc:#0A3F4B; --rail:#0F2A31; --verde:#22A06B; --laranja:#F28C28;
   --fundo:#F4F8F8; --tinta:#E8F1F2; --texto:#15303a; --suave:#4b6670; --linha:rgba(14,90,107,.13);
@@ -112,7 +117,7 @@ figcaption{font-size:.8rem;color:var(--suave);margin-top:10px;text-align:center}
 .breve>div{background:#fff;border:1px dashed rgba(14,90,107,.35);border-radius:16px;padding:20px}
 .breve b{display:block;color:var(--pri-esc);margin:8px 0 4px}
 .breve p{font-size:.9rem;color:var(--suave);margin:0}
-.sb{font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#FDECD6;color:#9a560a;padding:3px 9px;border-radius:999px}
+.sb{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#FDECD6;color:#9a560a;padding:3px 9px;border-radius:999px}
 
 /* como funciona */
 .passos{list-style:none;padding:0;margin:0 0 48px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:p}

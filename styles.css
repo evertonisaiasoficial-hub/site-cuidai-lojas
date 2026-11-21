@@ -1,4 +1,8 @@
 /* Cuida Aí Lojas — estilos */
+@font-face{font-family:Inter;src:url(fonts/inter-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-700-normal.woff2) format("woff2");font-weight:700 900;font-display:swap}
 :root{
   --teal-900:#0b3f4c;--teal:#0f5566;--teal-600:#13707a;--verde:#1f9a6a;--verde-50:#e9f7f0;
   --laranja:#f28c28;--laranja-600:#d9741a;
