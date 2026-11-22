@@ -112,4 +112,15 @@
   d.querySelectorAll('.nav a').forEach(function (a) {
     a.addEventListener('click', function () { if (chk) chk.checked = false; });
   });
+
+  // hero: mostra o pôster leve e troca pela animação depois que a página carregou
+  var hero = d.querySelector('img[data-anim]');
+  if (hero) {
+    var troca = function () {
+      var im = new Image();
+      im.onload = function () { hero.src = hero.getAttribute('data-anim'); };
+      im.src = hero.getAttribute('data-anim');
+    };
+    if (d.readyState === 'complete') { setTimeout(troca, 300); } else { window.addEventListener('load', function () { setTimeout(troca, 300); }); }
+  }
 })();
