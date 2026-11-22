@@ -56,9 +56,9 @@ figure{margin:0}
 
 /* fundo animado */
 .aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.aurora i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.4;animation:flutuar 16s ease-in-out infinite alternate}
-.aurora .a1{width:440px;height:440px;background:#22A06B;top:-140px;left:-100px}
-.aurora .a2{width:400px;height:400px;background:#F28C28;bottom:-160px;right:-80px;animation-delay:-6s}
+.aurora i{position:absolute;border-radius:50%;opacity:.4;will-change:transform;animation:flutuar 16s ease-in-out infinite alternate}
+.aurora .a1{width:600px;height:600px;background:radial-gradient(circle,#22A06B 0,rgba(34,160,107,0) 68%);top:-220px;left:-180px}
+.aurora .a2{width:560px;height:560px;background:radial-gradient(circle,#F28C28 0,rgba(242,140,40,0) 68%);bottom:-240px;right:-160px;animation-delay:-6s}
 @keyframes flutuar{to{transform:translate(40px,30px) scale(1.1)}}
 
 /* topo da página */
