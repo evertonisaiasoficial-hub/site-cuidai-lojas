@@ -199,7 +199,7 @@ figcaption{font-size:.8rem;color:var(--suave);margin-top:10px;text-align:center}
 
 /* animação de entrada (só quando o JavaScript está ligado) */
 .entra{animation:entra .7s both;animation-delay:var(--d,0s)}
-@keyframes entra{from{opacity:0;transform:translateY(16px)}}
+@keyframes entra{from{transform:translateY(10px)}}
 .js .revela{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
 .js .revela.vis{opacity:1;transform:none}
 
